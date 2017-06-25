@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.widget.TextClock
+        android:id="@+id/hk_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:format12Hour="@null"
+        android:format24Hour="k:mm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="70sp"
+        android:timeZone="GMT+0100" />
+
+    <android.widget.TextClock
+        android:id="@+id/hk_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="@null"
+        android:format24Hour="MMM dd, yyyy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:timeZone="GMT+0100"
+        android:layout_alignBottom="@+id/hk_time"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="The current time is"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seems like a perfect time for a cup of tea"
+        android:layout_below="@+id/hk_time2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/tea"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+</RelativeLayout>
